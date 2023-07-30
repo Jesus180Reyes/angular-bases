@@ -1,0 +1,19 @@
+<h1 class="text-indigo-400">{{name}}</h1>
+<h1>Hola a todos</h1>
+<dl class="ml-2">
+    <td class="text-base font-bold underline">Nombre:</td>
+    <dd>{{name}}</dd>
+    <td class="text-base font-bold underline">Edad:</td>
+    <dd>{{age}}</dd>
+    <dd class="text-base font-bold underline">Metodo:</dd>
+    <dd>{{getHeroDescription()}}</dd>
+    <td class="text-base font-bold underline">Capitalizado:</td>
+    <dd>{{capitalizeName}}</dd>
+</dl>
+<div class="m-4">
+    <button *ngIf="name !== 'Jesus'" class="btn" (click)="changeHero()">Cambiar Nombre</button>
+    <button *ngIf="age !== 21" class="btn"  (click)="changeAge()">Cambiar Edad</button>
+    <button  class="btn"  (click)="resetForm()">Reset</button>
+
+</div>
+
