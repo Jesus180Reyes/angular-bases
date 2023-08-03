@@ -1,0 +1,16 @@
+<ol class="">
+    <h1 class="text-2xl font-bold">Listado:</h1>
+    <li  [ngClass]="{'text-sky-400 ': isLast, 'text-green-400':isFirst}" *ngFor="let character of characterList; let i = index; let isFirst = first; let isLast = last" 
+    class="text-lg mt-3 italic w-96 ">
+        <span class="font-bold text-md">{{i + 1}} Character: </span>
+        {{character.name}} - 
+        <span class="font-bold text-md">Power: 
+        </span>
+        {{character.power}}
+        <span>Es el primero: {{isFirst}}</span>
+        <span>Es el Ultimo:  {{isLast}}</span>
+        <span>{{character.id}}</span>
+        <button (click)="onDeleteCharacter(character.id!)" class="bg-red-500 text-white  w-11 p-1 ml-2 rounded">X</button>
+    </li>  
+   
+</ol>

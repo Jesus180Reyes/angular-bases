@@ -1,0 +1,24 @@
+<div class="w-full ">
+
+    <h4 class="text-center font-bold text-2xl mb-2">Agregar Personaje:</h4>
+    
+    <form (ngSubmit)="emitCharacter()"  class="flex flex-col  gap-2 w-96  p-5 ml-2">
+        <input 
+        name="name" [(ngModel)]="character.name"
+        class="italic bg-slate-200 p-2 rounded outline-none focus:ring border-blue-500" 
+        type="text" 
+        placeholder="Nombre del peronaje">
+
+        <input 
+        name="power" [(ngModel)]="character.power" 
+        class="italic bg-slate-200 p-2 rounded outline-none focus:ring border-blue-500" 
+        type="number" 
+        placeholder="Poder">
+        
+        <button 
+        class="w-full bg-green-500 p-2 text-white font-bold rounded" 
+        type="submit">Agregar</button>
+    </form>
+    
+    <!-- <pre>{{character | json}}</pre> -->
+</div>

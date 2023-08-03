@@ -1,0 +1,14 @@
+<h1 class="p-2 text-2xl font-bold">DBZ Personajes</h1>
+
+<hr>
+<div class="flex  mt-5 items-center w-full justify-evenly max-sm:flex-col gap-5">
+    
+    <div >
+        <dbz-list (deleteCharacter)="deleteCharacter($event)"  [characterList]="characters"/>
+        <h1 *ngIf="characters.length === 0">No hay Datos</h1>
+        
+    </div>
+    <app-dbz-add-character (onNewCharacter)="onNewCharacter($event)"/>
+
+    
+</div>
