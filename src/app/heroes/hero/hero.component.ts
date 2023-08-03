@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-heroes-list',
   templateUrl: './hero.component.html',
-  styleUrls: ['./hero.component.css']
+  // styleUrls: ['./hero.component.css']
 })
 export class HeroComponent {
   public name: string = "ironMan";

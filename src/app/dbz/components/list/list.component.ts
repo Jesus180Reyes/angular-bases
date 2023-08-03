@@ -4,7 +4,7 @@ import {v4 as uuid} from 'uuid'
 @Component({
   selector: 'dbz-list',
   templateUrl: './list.component.html',
-  styleUrls: ['./list.component.css']
+  // styleUrls: ['./list.component.css']
 })
 export class ListComponent {
   @Output()
